@@ -1,1 +1,1 @@
-web: sh start.sh
+gunicorn news.wsgi —-log-file -

@@ -1,3 +1,5 @@
 .env
+app/migrations/*
 .vscode/*
 .DS_Store/*
+news.sqlite3

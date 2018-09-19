@@ -7,6 +7,12 @@ name = "pypi"
 django = "*"
 djangorestframework = "*"
 python-dotenv = "*"
+djangorestframework-simplejwt = "*"
+django-rest-auth = "*"
+django-allauth = "*"
+djangorestframework-jwt = "*"
+django-rest-registration = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 

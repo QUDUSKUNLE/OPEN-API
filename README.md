@@ -14,10 +14,10 @@ The functionality of this app depends on the following technologies.
 - Sqlite3
 
 ### Usage
-- Visit `localhost:8080/admin` on your browser to log in to the admin.
-- Visit `localhost:8000/api/v1/users/` to sign up
-- Visit the endpoints `localhost:8080/api/v1/login/` on postman or the browser and supplied your username(which is your email) and password.
-- Grab the token and pass it as Authorization Token header while you access the endpoints `localhost:8080/api/v1/articles/`
+- Visit `https://open-apis.herokuapp.com/admin` on your browser to log in to the admin.
+- Visit `https://open-apis.herokuapp.com/api/v1/users/` to sign up
+- Visit the endpoints `https://open-apis.herokuapp.com/api/v1/login/` on postman or the browser and supplied your username(which is your email) and password.
+- Grab the token and pass it as Authorization Token header while you access the endpoints `https://open-apis.herokuapp.com/api/v1/articles/`
 - The GET method will retrieve articles
 - The POST method will post, retrieve and edit `articles`
 

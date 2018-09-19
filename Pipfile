@@ -16,6 +16,7 @@ django-cors-headers = "*"
 python-decouple = "*"
 gunicorn = "*"
 dj-database-url = "*"
+"psycopg2" = "*"
 
 [dev-packages]
 

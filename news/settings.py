@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+from decouple import config, Csv
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -24,7 +25,10 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['open-apis.herokuapp.com']
+ALLOWED_HOSTS = config('HOST_IP', cast=Csv())
+ALLOWED_HOSTS += [
+    'open-apis.herokuapp.com'
+]
 
 
 # Application definition
@@ -137,7 +141,7 @@ REST_REGISTRATION = {
     'VERIFICATION_FROM_EMAIL': 'no-reply@example.com',
 }
 
-CORS_ORIGIN_REGEX_WHITELIST = (
-    r'^(https?:\/\/)?((localhost)|(127\.0\.0\.1)):\d{4}',)
+CORS_ORIGIN_REGEX_WHITELIST = \
+    (r'^(https?:\/\/)?(.+\.)?((herokuapp\.com))', )
 
 AUTH_USER_MODEL = 'app.User'

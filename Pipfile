@@ -13,6 +13,7 @@ django-allauth = "*"
 djangorestframework-jwt = "*"
 django-rest-registration = "*"
 django-cors-headers = "*"
+python-decouple = "*"
 
 [dev-packages]
 
